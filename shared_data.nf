@@ -1,5 +1,13 @@
 #!/usr/bin/env nextflow
 
+// experimenting with generating a single file from one process which
+// can then be passed to two processes as a channel
+//
+// make_random_text - generate 10 lines of random text -> random.txt
+//
+// capitalise_text - take an input channel and capitalise it
+//
+// reverse_text - take an input channel and reverse each line
 
 
 process make_random_text {
